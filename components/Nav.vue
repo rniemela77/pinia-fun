@@ -36,6 +36,5 @@ a {
   padding: 1rem;
   display: block;
   background: rgba(0, 0, 0, 0.1);
-  font-size: 200%;
 }
 </style>

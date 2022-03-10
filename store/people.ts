@@ -1,16 +1,25 @@
 import { defineStore } from "pinia";
 
+interface PeopleState {
+  people: Person[];
+}
+
 export const usePeopleStore = defineStore({
   id: "people-store",
-  state: () => {
+  state: (): PeopleState => {
     return {
       people: [
-        {
-          id: 0,
-          name: "John",
-          age: 200,
-        },
+        // {
+        //   name: "John",
+        //   age: 200,
+        // },
       ],
     };
+  },
+  getters: {
+    peopleLength: (state) => state.people.length,
+    peopleOverAgeN: (state) => {
+      return (age: number) => state.people.filter((person) => person.age > age);
+    },
   },
 });
