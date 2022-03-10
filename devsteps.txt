@@ -1,0 +1,3 @@
+Install pinia
+https://dev.to/manojap/setup-pinia-in-nuxt-3-37ia#:~:text=Setup%20Pinia%20store%20in%20a%20Nuxt3%20app&text=To%20setup%20Pinia%20store%20add,add%20it%20for%20you%2Clol.
+-> yarn add pinia @pinia/nuxt
